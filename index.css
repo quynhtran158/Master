@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+:root {
+  --white-light-bg: #f7f9fc;
+  --black-light-bg: #191c1d;
+  --black-bg: #131617;
+  --pink: #dc4f72;
+  --black-light-text: #5a5a5a;
+}
