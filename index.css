@@ -3,9 +3,23 @@ a {
 }
 
 :root {
-  --white-light-bg: #f7f9fc;
-  --black-light-bg: #191c1d;
-  --black-bg: #131617;
   --pink: #dc4f72;
   --black-light-text: #5a5a5a;
+}
+
+[data-bs-theme="dark"] {
+  --bg-color: #131617;
+  --bg-color-light: #191c1d;
+}
+
+[data-bs-theme="white"] {
+  --bg-color: white;
+  --bg-color-light: #f7f9fc;
+}
+
+#navbar {
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-color: var(--bg-color);
 }
