@@ -1,0 +1,22 @@
+  ----- Hướng dẫn sử dụng darkmode -----
+
+  Thay vì viết:
+    background-color: black;
+    
+  Hãy dùng biến cho màu:
+    background-color: var(--bg-color);
+    
+  Mỗi khi theme="dark" thì --bg-color sẽ có màu đen
+  Mỗi khi theme="white" thì --bg-color sẽ có màu trắng
+
+
+1. Tiêu đề:
+Hãy dùng các thẻ sau (h3 có class "sub-title", h6 có class "title")
+      <h3 class="sub-title">Hello hahs</h3>
+      <h6 class="title">From the oteher world</h6>
+
+2. Button:
+Hồng
+      <button class="pink">GET STARTED</button>
+Trắng
+      <button class="white">book a demo</button>

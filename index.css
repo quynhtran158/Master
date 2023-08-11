@@ -1,10 +1,18 @@
-a {
-  text-decoration: none;
+* {
+  font-family: "Nunito", sans-serif;
 }
 
 :root {
-  --pink: #dc4f72;
-  --black-light-text: #5a5a5a;
+  --primary-color: #dc4f72; /* màu chủ đạo */
+  --black-light-text: #5a5a5a; /* màu chữ chìm */
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 [data-bs-theme="dark"] {
@@ -17,9 +25,39 @@ a {
   --bg-color-light: #f7f9fc;
 }
 
-#navbar {
-  display: block;
-  width: 500px;
-  height: 500px;
-  background-color: var(--bg-color);
+h3.sub-title {
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h6.title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+button.pink {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid transparent;
+}
+
+button.white {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
