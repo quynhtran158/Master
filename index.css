@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--bg-color);
+  font-size: initial;
 }
 
 a {
@@ -18,11 +19,15 @@ a {
 [data-bs-theme="dark"] {
   --bg-color: #131617;
   --bg-color-light: #191c1d;
+  --text-color: #fff;
+  --text-color-light: #eee;
 }
 
 [data-bs-theme="white"] {
-  --bg-color: white;
+  --bg-color: #fff;
   --bg-color-light: #f7f9fc;
+  --text-color: #131617;
+  --text-color-light: #2c3038;
 }
 
 h3.sub-title {
@@ -48,6 +53,9 @@ button {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
+  box-shadow: none;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 button.pink {
@@ -57,7 +65,235 @@ button.pink {
 }
 
 button.white {
-  background-color: white;
+  background-color: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
+}
+
+.header-section {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-section p {
+  color: var(--black-light-text);
+}
+
+/* Project */
+.tab-pane h2 {
+  font-weight: 700;
+}
+
+.tab-pane p {
+  color: var(--black-light-text);
+}
+
+/* Ghi đè lib master res tab */
+.r-tabs {
+  border: none;
+  background-color: transparent;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  background-color: transparent;
+}
+
+.r-tabs-nav li {
+  width: 33%;
+  text-align: center;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.r-tabs-tab.r-tabs-state-active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.r-tabs-panel h2 {
+  font-weight: 700;
+}
+
+.r-tabs-panel p {
+  font-size: 16px;
+  color: var(--black-light-text);
+}
+
+.r-tabs-panel img {
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.r-tabs-panel img:hover {
+  transform: translateY(-10px);
+}
+
+.r-tabs .r-tabs-panel {
+  background-color: var(--bg-color);
+  border-bottom-color: transparent;
+}
+
+/* accordion */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+#responsiveTabsDemo {
+  transition: all 0.9s;
+}
+
+@media only screen and (max-width: 768px) {
+  .r-tabs {
+    border-radius: 0;
+    border: 1px solid var(--black-light-text);
+  }
+  .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    border-radius: 0;
+    border-bottom: 1px solid var(--black-light-text);
+  }
+  .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    border-bottom: 3px solid var(--primary-color);
+  }
+}
+
+/* Testimonial */
+#testimonial {
+  background: linear-gradient(
+      to right,
+      var(--bg-color),
+      rgba(255, 255, 255, 0.77)
+    ),
+    url(./image/b2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.carousel .item {
+  background: var(--bg-color);
+  padding: 32px;
+  border-radius: 5px;
+}
+.carousel .item .left {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  overflow: hidden;
+}
+.carousel .item .right {
+  position: relative;
+  width: 80%;
+  padding-left: 50px;
+}
+.carousel .item .right span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text-color-light);
+  opacity: 0.2;
+  font-size: 40px;
+}
+
+.carousel .item .right .intro {
+  font-size: 18px;
+}
+.carousel .item .right .author {
+  color: var(--primary-color);
+}
+.carousel .item .right .company {
+  color: var(--black-light-text);
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.carousel .item img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dot {
+  width: 40px;
+  height: 5px;
+  margin: 0 5px;
+  border-radius: 0;
+  background: var(--bg-color) !important;
+}
+
+.owl-dot.active {
+  background: var(--primary-color) !important;
+}
+
+/* Action */
+#action {
+  background: var(--bg-color);
+}
+
+/* Footer */
+#footer {
+  background: var(--bg-color-light);
+}
+.footer-links a {
+  display: block;
+  color: var(--black-light-text);
+  font-size: 15px;
+  margin-bottom: 20px;
+  transform: all 0.5s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subcribe {
+  background: var(--bg-color);
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  border-radius: 5px;
+}
+
+.subcribe .email input {
+  width: 78%;
+}
+
+.subcribe .email button {
+  width: 20%;
+}
+
+.subcribe p {
+  color: var(--black-light-text);
+}
+
+.copyright {
+  border-top: 1px solid #333;
+}
+
+#footer .icons a {
+  margin: 0 15px;
+  color: var(--text-color);
 }
