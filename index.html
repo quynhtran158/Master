@@ -35,11 +35,6 @@
     <!-- CSS from other lib -->
     <!-- Easy responsive tabs -->
     <link
-      rel="stylesheet"
-      href="./lib/Easy-Responsive-Tab-2/css/tabs-responsive.css"
-    />
-    <!-- today res tab -->
-    <link
       type="text/css"
       rel="stylesheet"
       href="./lib/Responsive-Tabs-master/css/responsive-tabs.css"
@@ -61,7 +56,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./res-tab.css" />
   </head>
   <body>
     <!-- Quỳnh -->
@@ -321,8 +315,15 @@
         </div>
       </div>
     </section>
+
+    <section id="backToTop">
+      <button class="pink" onclick="scrollToTop()">
+        <i class="fa fa-angle-up"></i>
+      </button>
+    </section>
+
     <section
-      id="btt"
+      id="darkmode"
       style="position: fixed; bottom: 20px; left: 20px"
       onclick="toggleDarkmode()"
     >
@@ -349,11 +350,6 @@
 
     <!-- JS from other lib -->
     <!-- Easy responsive tabs -->
-    <script src="./lib/Easy-Responsive-Tab-2/js/jquery-1.9.1.min.js"></script>
-    <!-- <script src="./lib/Easy-Responsive-Tab-2/js/easyResponsiveTabs.js"></script> -->
-    <script src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/js/easyResponsiveTabs.js"></script>
-
-    <!-- Today res tab -->
     <script src="./lib/Responsive-Tabs-master/js/jquery.responsiveTabs.js"></script>
     <!-- Owl Carousel -->
     <!-- <script src="jquery.min.js"></script> -->

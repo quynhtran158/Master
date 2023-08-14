@@ -53,9 +53,6 @@ button {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  box-shadow: none;
-  margin-top: 0;
-  margin-right: 0;
 }
 
 button.pink {
@@ -89,7 +86,7 @@ button.white {
   color: var(--black-light-text);
 }
 
-/* Ghi đè lib master res tab */
+/* Lib Master responsive tab */
 .r-tabs {
   border: none;
   background-color: transparent;
@@ -142,7 +139,7 @@ button.white {
   border-bottom-color: transparent;
 }
 
-/* accordion */
+/* [res tab] accordion */
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -169,6 +166,12 @@ button.white {
   .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
     border-bottom: 3px solid var(--primary-color);
   }
+}
+/* reset css res tab */
+button {
+  box-shadow: none;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 /* Testimonial */
@@ -296,4 +299,25 @@ button.white {
 #footer .icons a {
   margin: 0 15px;
   color: var(--text-color);
+}
+
+/* Back To Top */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#backToTop button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding: 0;
+}
+
+#backToTop button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
