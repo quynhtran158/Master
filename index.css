@@ -100,7 +100,7 @@ button.white {
   /* nó có nghĩa là thẻ <a> trơn (ko có href, ko có class) thì sẽ có color inherit */
   /* để dòng của e có điểm ưu tiên hiển thị cao hơn thì còn 2 cách khác ngoài important */
   /* 1. thêm href hoặc class vào thẻ <a> */
-  /* 2. tăng điểm ưu tiên hiển thị bằng cách thêm các parent vào: .navbar .navbar-logo a */
+  /* 2. tăng điểm ưu tiên hiển thị bằng cách thêm parent vào: .navbar .navbar-logo a */
   font-size: 26px;
   font-weight: bold;
 }
