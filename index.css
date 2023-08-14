@@ -92,8 +92,15 @@ button.white {
 }
 
 .navbar-logo a {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
   /*khong hieu lam tai sao khong adjust duoc mau cua the a */
+  /* PHUC explains */
+  /* khi em xem source thì sẽ thấy BS có css sau: a:not([href]):not([class]), a:not([href]):not([class]):hover {color: inherit;} */
+  /* dòng này có điểm ưu tiên hiển thị cao hơn dòng của em nên nó dc hiển thị */
+  /* nó có nghĩa là thẻ <a> trơn (ko có href, ko có class) thì sẽ có color inherit */
+  /* để dòng của e có điểm ưu tiên hiển thị cao hơn thì còn 2 cách khác ngoài important */
+  /* 1. thêm href hoặc class vào thẻ <a> */
+  /* 2. tăng điểm ưu tiên hiển thị bằng cách thêm các parent vào: .navbar .navbar-logo a */
   font-size: 26px;
   font-weight: bold;
 }
