@@ -33,24 +33,375 @@
     />
 
     <!-- CSS from other lib -->
+<!-- Count Up -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+
+
     <!-- Quỳnh -->
     <section id="navbar">
-      <!-- Các element mẫu -->
-      <h3 class="sub-title">Hello hahs</h3>
-      <h6 class="title">From the oteher world</h6>
-      <button class="pink">GET STARTED</button>
-      <button class="white">GET STARTED</button>
+      <div class="container navbar-container pb-4 fixed-top">
+        <div class="navbar-content">
+          <div class="navbar-logo">
+            <i class="fa fa-handshake"></i>
+            <a>Masterwork</a>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Landing page</a>
+                      </li>
+                      <a class="dropdown-item" href="#">404 page</a>
+                        
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                 
+                  
+                </ul>
+
+                <!-- Button trigger modal for search logo-->
+
+<div class="search-popup">
+  <div class="search-logo-container">
+   <a href="#searchModal" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-search"></i></a>
+   
+  </div>
+  </div>
+
+                 <button class="white" type="submit">
+                    SHEDULE A DEMO</button>
+                  
+                    <div class="change-theme-button">
+                      <!-- toggle for light and dark theme -->
+                      <div class="nav-theme">
+                        <div class="theme-container">
+                          <div class="theme-content">
+                            <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox" />
+                              <div class="toggle" onclick="switchDarkMode()">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa fa-sun"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+               
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+     
+<!-- End Navbar -->
     </section>
-    <section id="banner"></section>
-    <section id="reason"></section>
-    <section id="about"></section>
-    <section id="bio"></section>
-    <section id="qaa"></section>
+
+    <section id="banner">
+      <div class="container banner-container pt-5 mt-5 mb-5">
+        <div class="banner-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 content-left">
+            <h3 class="sub-title">
+              We Execute Our Ideas From Start to Finish
+            </h3>
+            <p class="mt-3 mb-lg-5 mb-4">
+              Building a beautiful interactive business for startups and innovative companies.
+            </p>
+            <button class="white">GET STARTED</button>
+          </div>
+          <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+            <img src="./img.png" class="img-fluid" alt="main image">
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </section>
+    
+    </section>
+    <section id="reason">
+      <div class="container reason-container text-center pt-5">
+        <div class="reason-content text-center">
+        <h6 class="title"> WHY CHOOSE US</h6>
+        <h3 class="sub-title mx-5 text-center">Tools for business startup to professional
+        </h3>
+        <p class="py-5 text-center">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      
+      <div class="reason-box">
+        <div class="row grids ">
+
+          <div class="col-lg-4 col-md-6 mt-5">
+<div class="grid">
+  
+    <img src="./img/s1.png" class="img-fluid">
+    <h3 class="my-3">
+      Interactive            </h3>
+    <p >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+  
+</div>
+</div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+<div class="grid">
+    <img src="./img/s2.png" class="img-fluid">
+    <h3 class="my-3">
+      Business            </h3>
+    <p >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+</div>
+</div>
+
+          <div class="col-lg-4 mt-5">
+<div class="grid">
+    <img src="./img/s3.png" class="img-fluid">
+    <h3 class="my-3">
+      Inspiration            </h3>
+    <p >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?            </p>
+</div>
+</div>
+
+</div>
+
+
+      </div>
+    </div>
+    
+    </section>
+
+    <section id="about">
+      <div class="py-5">
+        <div class="container about-container mt-3">
+          <div class="row align-items-center">
+            <div class="col-sm-6 pr-md-5">
+              <h6 class="title">
+                About Our Company
+              </h6>
+              <h3 class="sub-title mb-md-4 mb-3">
+                The Best Choice For Your Successful Business!
+              </h3>
+              <p class="mb-md-5 mb-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+              </p>
+              <button class="pink"> Read More</button>
+              
+            </div>
+            <div class="col-sm-6 mt-sm-0 mt-5">
+              <img src="./img/about.jpg" class="img-fluid shadow img-rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="number">
+      <div class="pb-5 pt-4">
+        <div class="container pb-lg-3">
+          <div class="row justify-content-center">
+      
+            <div class="col-lg-4 col-sm-6 py-3 grid1">
+              <div class="counter_grid">
+                <h4 class="title">
+                  Happy Customers
+                </h4>
+                <p class="counter sub-title">
+                  10458
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4 py-3 grid2">
+              <div class="counter_grid">
+                <h4 class="title">
+                  Winning Awards
+                </h4>
+                <p class="counter">
+                  890
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4 py-3 grid3">
+              <div class="counter_grid">
+                <h4 class="title">
+                  Completed Projects
+                </h4>
+                <p class="counter">
+                  5345
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <section id="bio">
+      <div class="wrapper">
+        <div class="bio-container">
+          <div class="bio-content text-center d-flex align-items-center">
+            <div class="col-sm-6">
+              <div class="d-flex flex-column align-items-start">
+                <h2 class="text-left">We are true to ourselves, and commit to always perform at our best.</h2>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="bio">
+      <div class="wrapper">
+        <div class="bio-container">
+          <div class="bio-content text-center d-flex align-items-center justify-content-center">
+            <div class="col-sm-6">
+              <div class="d-flex flex-column align-items-start">
+                <h2 class="text-left">We are true to ourselves, and commit to always perform at our best.</h2>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="qaa">
+      <div class="container qaa-container py-lg-5">
+       <div class="qaa-content">
+         <h2></h2>
+       <p></p>
+     </div>
+       <div class="row">
+         <div class="col-md-5 mt-5">
+           <div class="qaa-image">
+             <img src="./img/qaa.jpeg" class="img-fluid shadow img-curve" alt="">
+           </div>
+         </div>
+ 
+         <div class="col-md-7 mt-5 pl-md-5">
+           <div class="qaa-dropdown"><div class="accordion" id="accordionPanelsStayOpenExample">
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   Accordion Item #1
+                 </button>
+               </h2>
+               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                 <div class="accordion-body">
+                   <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 </div>
+               </div>
+             </div>
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                   Accordion Item #2
+                 </button>
+               </h2>
+               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                 <div class="accordion-body">
+                   <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 </div>
+               </div>
+             </div>
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                   Accordion Item #3
+                 </button>
+               </h2>
+               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                 <div class="accordion-body">
+                   <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         </div>
+ 
+         
+ 
+       </div>
+      </div> 
+     </section>
+
+ <!-- Các element mẫu -->
+ <h3 class="sub-title">Hello hahs</h3>
+ <h6 class="title">From the oteher world</h6>
+ <button class="pink">GET STARTED</button>
+ <button class="white">GET STARTED</button>
+ <!--  -->
+
+
 
     <!-- Phúc -->
     <section id="project"></section>
@@ -78,6 +429,11 @@
     ></script>
 
     <!-- JS from other lib -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <!-- Count up -->
+ <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
 
     <!-- Custom JS -->
     <script src="./index.js"></script>
