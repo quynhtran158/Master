@@ -78,9 +78,20 @@ button.white {
   border: 2px solid var(--primary-color);
 }
 
+/* Darkmode */
+function toggleDarkmode() {
+    let html = document.getElementsByTagName("html")[0]
+    let mode = html.getAttribute("data-bs-theme")
+    html.setAttribute("data-bs-theme", mode == "dark" ? "white" : "dark")
+}
+
 /* QUYNH */
 
 /* NAVBAR STARTS */
+.navbar-container {
+  background-color: var(--bg-color); /*khong adjust duoc mau fixed-top navbar*/
+  /* neu color: white thi duoc */
+}
 .navbar-content {
   display: flex;
   justify-content: space-between;
@@ -88,6 +99,7 @@ button.white {
   width: 90%;
   align-items: center;
   margin: 0 auto;
+  background-color: var(--bg-color);
 }
 
 .navbar-logo i {
@@ -332,10 +344,6 @@ p.counter {
 .bio-container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.bio-wrapper {
-  background-color: #f9f9f9;
 }
 
 .bio-content {
