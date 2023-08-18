@@ -88,6 +88,13 @@ button.white {
 /* QUYNH */
 
 /* NAVBAR STARTS */
+#navbar {
+  width: 100%;
+  position: fixed;
+  background: var(--bg-color);
+  z-index: 1;
+}
+
 .navbar-container {
   background-color: var(--bg-color); /*khong adjust duoc mau fixed-top navbar*/
   /* neu color: white thi duoc */
@@ -104,7 +111,7 @@ button.white {
 
 .navbar-logo i {
   color: var(--primary-color);
-  background: #fff;
+  /* background: #fff; */
   font-size: 26px;
 }
 
@@ -135,15 +142,25 @@ button.white {
   opacity: 0.1;
 }
 
+#switchButton i {
+  font-size: 24px;
+}
+
 /* BANNER STARTS */
 #banner {
   padding-top: 50px;
-  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
+  background: linear-gradient(
+      to right,
+      var(--bg-color),
+      rgba(255, 255, 255, 0.92)
+    ),
     url(../img/banner_carousel.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
+
 #banner .banner-container {
   display: flex;
   align-items: center;
@@ -330,7 +347,6 @@ p.counter {
 
 /* Number */
 .number {
-  background-color: #f9f9f9;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }

@@ -43,12 +43,12 @@ function scrollToTop() {
 function toggleDarkmode() {
     let html = document.getElementsByTagName("html")[0]
     let mode = html.getAttribute("data-bs-theme")
-    html.setAttribute("data-bs-theme", mode == "dark" ? "white" : "dark")
+    if (mode == "dark") {
+        html.setAttribute("data-bs-theme", "white")
+        document.querySelector("#switchButton i").classList = "fa-regular fa-moon"
+    } else {
+        html.setAttribute("data-bs-theme", "dark")
+        document.querySelector("#switchButton i").classList = "fa-solid fa-sun"
+    }
 }
 $(".counter").countUp();
-/* Darkmode */
-function toggleDarkmode() {
-    let html = document.getElementsByTagName("switchButton")[0];
-    let mode = html.getAttribute("data-bs-theme");
-    html.setAttribute("data-bs-theme", mode == "dark" ? "white" : "dark");
-}
